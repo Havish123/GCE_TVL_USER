@@ -7,5 +7,9 @@
     <string name="hello_blank_fragment">Hello blank Post</string>
     <string name="start">Start</string>
     <string name="close">Close</string>
+    <string name="place">Tiruneveli</string>
+    <string name="college_name">Government College of Engineering</string>
+
+    <string name="about_college">Government College of Engineering, Tirunelveli, is a state-owned Engineering Institute located in the city of Tirunelveli in the state of Tamil Nadu. Tirunelveli is often referred as the \'Oxford of south India\' due to the larger number of educational institutions present. It is affiliated to Anna University, Chennai and is a AICTE and DOTE approved educational institution in Tamil Nadu. It was established in the year 1981. The college is spread over an area of 23 hectares. The institution offers five undergraduate and five postgraduate programs.</string>
 
 </resources>

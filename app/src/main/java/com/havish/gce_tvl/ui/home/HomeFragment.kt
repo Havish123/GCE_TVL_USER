@@ -1,5 +1,8 @@
 package com.havish.gce_tvl.ui.home
 
+import android.content.Intent
+import android.media.Image
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -17,10 +20,12 @@ import com.smarteist.autoimageslider.IndicatorAnimations
 import com.smarteist.autoimageslider.SliderAnimations
 import com.smarteist.autoimageslider.SliderLayout
 import java.lang.ref.Reference
+import java.net.URI
 
 class HomeFragment : Fragment() {
 //    private lateinit var storageReference:StorageReference
     private lateinit var sliderLayout:SliderLayout
+    private lateinit var map:ImageView
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,14 +33,29 @@ class HomeFragment : Fragment() {
     ): View? {
         var view:View=inflater.inflate(R.layout.fragment_home, container, false)
 
+        map=view.findViewById(R.id.map)
+
         sliderLayout=view.findViewById(R.id.slider)
         sliderLayout.setIndicatorAnimation(IndicatorAnimations.FILL)
         sliderLayout.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION)
         sliderLayout.scrollTimeInSec=1
 
+
+
         setSliderView()
 
+        map.setOnClickListener{
+            openMap()
+        }
+
         return view;
+    }
+
+    private fun openMap() {
+        var uri:Uri= Uri.parse("geo:0,0?q=Government College of Engineering,Tiruneveli")
+        var intent:Intent= Intent(Intent.ACTION_VIEW,uri)
+        intent.setPackage("com.google.android.apps.maps")
+        startActivity(intent)
     }
 
     private fun setSliderView() {
