@@ -79,6 +79,7 @@ class GalleryFragment : Fragment() {
         })
     }
 
+
     private fun getIndependance() {
         reference.child("Independance Day").addValueEventListener(object :ValueEventListener{
             var indList:MutableList<String> = mutableListOf()

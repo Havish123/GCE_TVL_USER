@@ -27,6 +27,7 @@
                 android:layout_height="220dp"
                 android:scaleType="fitXY"
                 android:id="@+id/college_image"
+                android:src="@drawable/campus"
                 />
 
             <TextView
@@ -62,7 +63,85 @@
                     />
 
             </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Branches"
+                android:layout_marginTop="36dp"
+                android:textSize="@dimen/title_size"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/textColor"
+                android:fontFamily="@string/bold"
+                />
+            <androidx.viewpager.widget.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="@dimen/text_margin"
+                android:foregroundGravity="center"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:id="@+id/viewPager"
+                >
+
+
+            </androidx.viewpager.widget.ViewPager>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/text_margin"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Details"
+                    android:layout_marginTop="36dp"
+                    android:textSize="@dimen/title_size"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@string/bold"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/college_name"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:layout_marginHorizontal="@dimen/text_margin"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@string/light"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tirunelveli"
+                    android:layout_marginTop="@dimen/text_margin"
+                    android:layout_marginHorizontal="@dimen/text_margin"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@string/light"
+                    />
+                <ImageView
+                    android:id="@+id/map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="230dp"
+                    android:src="@drawable/mapgce"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
         </LinearLayout>
+
+
 
     </androidx.core.widget.NestedScrollView>
 

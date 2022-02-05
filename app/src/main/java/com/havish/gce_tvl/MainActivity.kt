@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity(),
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        supportActionBar?.setTitle("Goernment College of Engineering,Tirunelveli")
 
         drawerLayout=findViewById(R.id.drawerLayout)
         navView=findViewById(R.id.navigation_view)
