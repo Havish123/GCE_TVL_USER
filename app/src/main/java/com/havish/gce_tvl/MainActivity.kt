@@ -1,6 +1,7 @@
 package com.havish.gce_tvl
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -12,6 +13,7 @@ import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
+import com.havish.gce_tvl.ebook.EbookActivity
 
 class MainActivity : AppCompatActivity(),
     NavigationView.OnNavigationItemSelectedListener {
@@ -56,7 +58,9 @@ class MainActivity : AppCompatActivity(),
                 Toast.makeText(this,"Video",Toast.LENGTH_LONG).show()
             }
             R.id.navigation_ebook->{
-                Toast.makeText(this,"Ebook",Toast.LENGTH_LONG).show()
+                var intent:Intent= Intent(this@MainActivity,EbookActivity::class.java)
+                startActivity(intent)
+
             }
             R.id.navigation_rate->{
                 Toast.makeText(this,"Rate",Toast.LENGTH_LONG).show()

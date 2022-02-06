@@ -9,6 +9,7 @@
         android:icon="@drawable/ic_ebook"
         android:title="Ebooks"
         />
+
 <item android:id="@+id/navigation_themes"
         android:icon="@drawable/ic_theme"
         android:title="Themes"

@@ -47,8 +47,8 @@ class GalleryFragment : Fragment() {
                     otherList.add(data)
                 }
                 adapter= GalleryAdapter(otherList,context!!)
-                otherRecycler.layoutManager=GridLayoutManager(context,3)
                 otherRecycler.adapter=adapter
+                otherRecycler.layoutManager=GridLayoutManager(context,3)
             }
 
             override fun onCancelled(error: DatabaseError) {
@@ -68,8 +68,8 @@ class GalleryFragment : Fragment() {
                     gradList.add(data)
                 }
                 adapter= GalleryAdapter(gradList,context!!)
-                GradrecyclerView.layoutManager=GridLayoutManager(context,3)
                 GradrecyclerView.adapter=adapter
+                GradrecyclerView.layoutManager=GridLayoutManager(context,3)
             }
 
             override fun onCancelled(error: DatabaseError) {
@@ -89,8 +89,8 @@ class GalleryFragment : Fragment() {
                     indList.add(data)
                 }
                 adapter= GalleryAdapter(indList,context!!)
-                IndrecyclerView.layoutManager=GridLayoutManager(context,3)
                 IndrecyclerView.adapter=adapter
+                IndrecyclerView.layoutManager=GridLayoutManager(context,3)
             }
 
             override fun onCancelled(error: DatabaseError) {
